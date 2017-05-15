@@ -9,9 +9,11 @@
   "scripts": {
     "start": "webpack-dev-server",
     "test": "./node_modules/jest/bin/jest.js --no-cache",
+    "coverage": "jest --coverage",
     "clean-dist": "rimraf dist && mkdir dist",
     "prebuild": "npm run clean-dist",
     "build": "webpack"
+
   },
   "dependencies": {
     "react": "^15.5.4",
