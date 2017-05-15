@@ -8,8 +8,10 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "./node_modules/jest/bin/jest.js --no-cache",
+    "test": "jest --no-cache",
+    "test:watch": "jest --watch --no-cache",
     "coverage": "jest --coverage",
+    "coverage:watch": "jest --coverage",
     "clean-dist": "rimraf dist && mkdir dist",
     "prebuild": "npm run clean-dist",
     "build": "webpack"
