@@ -1,5 +1,6 @@
-langauge: node_js
+sudo: false
 
+language: node_js
 node_js:
   - "6"
 
@@ -7,16 +8,15 @@ cache:
   directories:
     - node_modules
 
-script:
-  - npm run coverage
-
-notifications:
-  email:
-    on_success: never
-    on_failure: change
+script: npm run coverage
 
 before_install:
-  - pip install --user codecov
+  - npm install codecov.io coveralls
 
 after_success:
-  - codecov --file coverage/lcov.info --disable search
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
+branches:
+  only:
+    - master
