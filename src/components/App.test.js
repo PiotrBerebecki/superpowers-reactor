@@ -8,10 +8,10 @@ describe('App', () => {
     expect(2).toEqual(2);
   });
 
-  // it('renders component correctly', () => {
-  //   const component = renderer.create(<App />);
-  //
-  //   let tree = component.toJSON();
-  //   expect(tree).toMatchSnapshot();
-  // });
+  it('renders component correctly', () => {
+    const component = renderer.create(<App />);
+
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

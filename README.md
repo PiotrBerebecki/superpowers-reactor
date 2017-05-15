@@ -13,3 +13,4 @@
 - Webpack loaders execute transforms on a per-file basis. Webpack plugins are most commonly used (but not limited to) performing actions and custom functionality on "compilations" or "chunks" of your bundled modules https://webpack.js.org/concepts/#plugins
 - Webpack Hot Module Replacement with React https://webpack.js.org/guides/hmr-react/
 - Webpack Hot Module Replacement exchanges, adds, or removes modules while an application is running without a page reload. This allows you to speed up development time by updating individual modules when they are changed without refreshing the page.
+- Jest throwing errors when importing css files http://facebook.github.io/jest/docs/en/webpack.html#mocking-css-modules
