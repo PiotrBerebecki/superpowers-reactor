@@ -9,11 +9,12 @@ cache:
 
 script:
   - npm test -- --coverage
+  - npm run build
 
 notifications:
   email:
     on_success: never
-    on_failure: change
+    on_failure: always
 
 before_install:
   - pip install --user codecov
