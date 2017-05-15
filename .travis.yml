@@ -8,7 +8,7 @@ node_js:
 #     - node_modules
 
 script:
-  - npm test -- --coverage
+  - npm test
   - npm build
 
 notifications:
