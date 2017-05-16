@@ -15,13 +15,16 @@ module.exports = {
     // app entry point
     path.resolve(__dirname, 'src', 'index.js'),
   ],
+
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     // necessary for HMR to know where to load the hot update chunks
     publicPath: '/',
   },
-  // devtool: 'inline-source-map',
+
+  devtool: 'inline-source-map',
+
   module: {
     rules: [
       {
@@ -38,6 +41,7 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     // enable HMR globally
     new webpack.HotModuleReplacementPlugin(),
@@ -55,6 +59,7 @@ module.exports = {
       filename: 'index.html',
     }),
   ],
+
   devServer: {
     // inline: true, // automatic refresh on file save
     hot: true, // enable HMR on the server

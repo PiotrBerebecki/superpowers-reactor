@@ -14,3 +14,4 @@
 - Webpack Hot Module Replacement with React https://webpack.js.org/guides/hmr-react/
 - Webpack Hot Module Replacement exchanges, adds, or removes modules while an application is running without a page reload. This allows you to speed up development time by updating individual modules when they are changed without refreshing the page.
 - Jest throwing errors when importing css files http://facebook.github.io/jest/docs/en/webpack.html#mocking-css-modules
+- Webpack config for production https://webpack.js.org/guides/production-build/

@@ -7,14 +7,15 @@
   "author": "Piotr Berebecki",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --config webpack.config.dev.js",
     "test": "jest --no-cache",
     "test:watch": "jest --watch --no-cache",
     "coverage": "jest --coverage",
-    "coverage:watch": "jest --coverage",
+    "coverage:watch": "jest --coverage --watch",
     "clean-dist": "rimraf dist && mkdir dist",
     "prebuild": "npm run clean-dist",
-    "build": "webpack"
+    "build:dev": "webpack --env=dev --config webpack.config.dev.js",
+    "build:prod": "webpack --env=prod --config webpack.config.prod.js"
 
   },
   "dependencies": {
