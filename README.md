@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/PiotrBerebecki/superpowers-reactor.svg?branch=master)](https://travis-ci.org/PiotrBerebecki/superpowers-reactor)
+
+
 # Superpowers Reactor
 
 ## Tech stack
