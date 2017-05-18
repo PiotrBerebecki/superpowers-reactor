@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/PiotrBerebecki/superpowers-reactor.svg?branch=master)](https://travis-ci.org/PiotrBerebecki/superpowers-reactor)
+[![Coverage Status](https://coveralls.io/repos/github/PiotrBerebecki/superpowers-reactor/badge.svg?branch=master)](https://coveralls.io/github/PiotrBerebecki/superpowers-reactor?branch=master)
 
 
 # Superpowers Reactor
