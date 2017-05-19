@@ -51,4 +51,5 @@ export const NavMenuLink = styled(NavLink)`
 
 export const Main = styled.main`
   background-color: #ddd;
+  color: blue;
 `;

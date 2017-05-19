@@ -40,6 +40,7 @@
     "html-webpack-plugin": "^2.28.0",
     "jest": "^20.0.1",
     "jest-styled-components": "https://github.com/styled-components/jest-styled-components.git#styled-components-v2",
+    "pre-push": "^0.1.1",
     "react-hot-loader": "next",
     "react-test-renderer": "^15.5.4",
     "react-with-styles": "^1.4.0",
