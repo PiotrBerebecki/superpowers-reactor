@@ -12,13 +12,9 @@ script: npm run coverage
 
 before_install:
   - pip install --user codecov
-  # - npm install codecov.io
-  #- npm install coveralls
 
 after_success:
   - codecov
-  # - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
-  #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 branches:
   only:

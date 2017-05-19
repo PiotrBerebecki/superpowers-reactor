@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/PiotrBerebecki/superpowers-reactor.svg?branch=master)](https://travis-ci.org/PiotrBerebecki/superpowers-reactor)
-[![Coverage Status](https://coveralls.io/repos/github/PiotrBerebecki/superpowers-reactor/badge.svg?branch=master)](https://coveralls.io/github/PiotrBerebecki/superpowers-reactor?branch=master)
-
+[![codecov](https://codecov.io/gh/PiotrBerebecki/superpowers-reactor/branch/master/graph/badge.svg)](https://codecov.io/gh/PiotrBerebecki/superpowers-reactor)
 
 # Superpowers Reactor
 
@@ -19,6 +18,4 @@
 - Webpack Hot Module Replacement exchanges, adds, or removes modules while an application is running without a page reload. This allows you to speed up development time by updating individual modules when they are changed without refreshing the page.
 - Jest throwing errors when importing css files http://facebook.github.io/jest/docs/en/webpack.html#mocking-css-modules
 - Webpack config for production https://webpack.js.org/guides/production-build/
-
-- coverage
-"coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+- Testing components which include react-router components https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/testing.md#testing

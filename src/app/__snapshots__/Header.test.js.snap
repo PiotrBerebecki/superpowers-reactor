@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div>
+  <a
+    className="sc-bdVaJa gRwgNw"
+    href="/latest"
+    onClick={[Function]}
+    style={undefined}
+  >
+    latest
+  </a>
+  <a
+    className="sc-bdVaJa gRwgNw"
+    href="/trending"
+    onClick={[Function]}
+    style={undefined}
+  >
+    trending
+  </a>
+  <a
+    className="sc-bdVaJa gRwgNw"
+    href="/top"
+    onClick={[Function]}
+    style={undefined}
+  >
+    top
+  </a>
+</div>
+`;

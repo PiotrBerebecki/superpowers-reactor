@@ -2,7 +2,8 @@ import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import { AppContainer } from 'react-hot-loader';
 
-import App from './components/App';
+import './styled/reset';
+import App from './app/App';
 
 ReactDOM.render(
   <AppContainer>
@@ -13,9 +14,9 @@ ReactDOM.render(
 
 // Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./components/App', () => {
+  module.hot.accept('./app/App', () => {
     console.clear();
-    const NextApp = require('./components/App').default;
+    const NextApp = require('./app/App').default;
     ReactDOM.render(
       <AppContainer>
         <NextApp />
