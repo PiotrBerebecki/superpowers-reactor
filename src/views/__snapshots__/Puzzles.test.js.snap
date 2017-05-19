@@ -1,13 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Puzzles renders correctly 1`] = `
-.byPLaq {
+.hfOXWO {
   background-color: #ddd;
-  color: ;
 }
 
 <main
-  className="sc-bZQynM byPLaq"
+  className="sc-bZQynM hfOXWO"
 >
   Puzzles 
 </main>
