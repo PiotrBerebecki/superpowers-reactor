@@ -1,30 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<div>
-  <a
-    className="sc-bdVaJa gRwgNw"
-    href="/latest"
-    onClick={[Function]}
-    style={undefined}
-  >
-    latest
-  </a>
-  <a
-    className="sc-bdVaJa gRwgNw"
-    href="/trending"
-    onClick={[Function]}
-    style={undefined}
-  >
-    trending
-  </a>
-  <a
-    className="sc-bdVaJa gRwgNw"
-    href="/top"
-    onClick={[Function]}
-    style={undefined}
-  >
-    top
-  </a>
-</div>
+<styled.header>
+  <styled.div>
+    <styled.nav>
+      <styled.ul>
+        <styled.li>
+          <Styled(NavLink)
+            exact={true}
+            to="/"
+          >
+            latest
+          </Styled(NavLink)>
+        </styled.li>
+        <styled.li>
+          <Styled(NavLink)
+            to="/trending"
+          >
+            trending
+          </Styled(NavLink)>
+        </styled.li>
+        <styled.li>
+          <Styled(NavLink)
+            to="/top"
+          >
+            top
+          </Styled(NavLink)>
+        </styled.li>
+      </styled.ul>
+    </styled.nav>
+  </styled.div>
+</styled.header>
 `;

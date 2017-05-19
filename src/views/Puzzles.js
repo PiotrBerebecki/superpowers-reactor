@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import { Main } from './../styled';
+
 class Puzzles extends Component {
   render() {
     return (
-      <div>
+      <Main>
         Puzzles {this.props.category}
-      </div>
+      </Main>
     );
   }
 }

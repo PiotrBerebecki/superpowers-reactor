@@ -18,10 +18,11 @@
     "build:prod": "webpack --env=prod --config webpack.config.prod.js"
   },
   "dependencies": {
+    "polished": "^1.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
-    "styled-components": "next"
+    "styled-components": "rc"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -33,12 +34,15 @@
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.1",
     "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^7.0.1",
     "html-webpack-plugin": "^2.28.0",
     "jest": "^20.0.1",
+    "jest-styled-components": "https://github.com/styled-components/jest-styled-components.git#styled-components-v2",
     "react-hot-loader": "next",
     "react-test-renderer": "^15.5.4",
+    "react-with-styles": "^1.4.0",
     "rimraf": "^2.6.1",
     "style-loader": "^0.17.0",
     "webpack": "^2.5.1",

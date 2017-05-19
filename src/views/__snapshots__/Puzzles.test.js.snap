@@ -1,7 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Puzzles renders correctly 1`] = `
-<div>
+.byPLaq {
+  background-color: #ddd;
+  color: ;
+}
+
+<main
+  className="sc-bZQynM byPLaq"
+>
   Puzzles 
-</div>
+</main>
+`;
+
+exports[`Puzzles renders without crashing 1`] = `
+<styled.main>
+  Puzzles 
+</styled.main>
 `;

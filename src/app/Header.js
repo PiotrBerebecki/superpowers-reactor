@@ -1,13 +1,29 @@
 import React from 'react';
-import { NavMenuLink } from './../styled';
+
+import {
+  HeaderWrapper,
+  NavContainer,
+  NavMenuLink,
+  Nav,
+  NavList,
+  NavItem,
+} from './../styled';
 
 function Header() {
   return (
-    <div>
-      <NavMenuLink exact to="/latest">latest</NavMenuLink>
-      <NavMenuLink exact to="/trending">trending</NavMenuLink>
-      <NavMenuLink exact to="/top">top</NavMenuLink>
-    </div>
+    <HeaderWrapper>
+      <NavContainer>
+        <Nav>
+          <NavList>
+            <NavItem><NavMenuLink exact to="/">latest</NavMenuLink></NavItem>
+            <NavItem>
+              <NavMenuLink to="/trending">trending</NavMenuLink>
+            </NavItem>
+            <NavItem><NavMenuLink to="/top">top</NavMenuLink></NavItem>
+          </NavList>
+        </Nav>
+      </NavContainer>
+    </HeaderWrapper>
   );
 }
 

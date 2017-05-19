@@ -1,20 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
+import 'jest-styled-components';
 
-import App from './App.js';
+import App from './App';
 
 describe('App', () => {
-  it('renders component correctly', () => {
-    const component = renderer.create(<App />);
-
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   it('passes relevant prop to home view', () => {
-    const component = shallow(<App />);
-    const homeRoute = component
+    const wrapper = shallow(<App />);
+    const homeRoute = wrapper
       .find('Route')
       .findWhere(route => route.props().path === '/');
 
@@ -23,14 +17,14 @@ describe('App', () => {
   });
 
   it('passes relevant prop to other views', () => {
-    const component = shallow(<App />);
-    const otherRoute = component
+    const wrapper = shallow(<App />);
+    const otherRoute = wrapper
       .find('Route')
       .findWhere(route => route.props().path === '/:category');
 
     const otherComponent = otherRoute
       .props()
-      .render({ match: { params: { category: 'trending' } } });
-    expect(otherComponent.props.category).toEqual('trending');
+      .render({ match: { params: { category: 'trendingg' } } });
+    expect(otherComponent.props.category).toEqual('trendingg');
   });
 });
