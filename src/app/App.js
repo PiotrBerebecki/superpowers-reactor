@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import theme from './../styled/theme';
 import Header from './Header';
-import Puzzles from './../views/Puzzles';
+import Puzzles from './../views/Puzzles/index.js';
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
             <Route
               exact
               path="/"
-              render={() => <Puzzles category="latest" />}
+              render={() => <Puzzles category="popular" />}
             />
             <Route
               path="/:category"

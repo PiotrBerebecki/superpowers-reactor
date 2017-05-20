@@ -8,7 +8,7 @@ import renderer from 'react-test-renderer';
 import { shallowToJson } from 'enzyme-to-json';
 import 'jest-styled-components';
 
-import Puzzles from './Puzzles';
+import Puzzles from './index';
 
 describe('Puzzles', () => {
   test('renders correctly', () => {

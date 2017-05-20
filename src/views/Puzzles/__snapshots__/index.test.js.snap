@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puzzles renders correctly 1`] = `
+.edDGAm {
+  color: ;
+  font-size: ;
+}
+
+.bOnQCM {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+}
+
+.laIxLi {
+  padding: ;
+  border-bottom: solid 1px;
+  background-color: ;
+}
+
+@media (min-width: 62em) {
+  .bOnQCM {
+    padding-top: 1.6rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .jQVNQJ {
+    box-shadow: 0 1px 1px ,                0px 2px 10px;
+  }
+}
+
+<main
+  className="sc-bZQynM edDGAm"
+>
+  <section
+    className="sc-gzVnrw bOnQCM"
+  >
+    <ul
+      className="sc-htoDjs jQVNQJ"
+    >
+      <li
+        className="sc-dnqmqq laIxLi"
+      />
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 01
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 02
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 03
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 04
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 05
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 06
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 07
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 08
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 09
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 10
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 11
+      </li>
+      <li
+        className="sc-dnqmqq laIxLi"
+      >
+        Puzzle 12
+      </li>
+    </ul>
+  </section>
+</main>
+`;
+
+exports[`Puzzles renders without crashing 1`] = `
+<styled.main>
+  <styled.section>
+    <styled.ul>
+      <styled.li />
+      <styled.li>
+        Puzzle 01
+      </styled.li>
+      <styled.li>
+        Puzzle 02
+      </styled.li>
+      <styled.li>
+        Puzzle 03
+      </styled.li>
+      <styled.li>
+        Puzzle 04
+      </styled.li>
+      <styled.li>
+        Puzzle 05
+      </styled.li>
+      <styled.li>
+        Puzzle 06
+      </styled.li>
+      <styled.li>
+        Puzzle 07
+      </styled.li>
+      <styled.li>
+        Puzzle 08
+      </styled.li>
+      <styled.li>
+        Puzzle 09
+      </styled.li>
+      <styled.li>
+        Puzzle 10
+      </styled.li>
+      <styled.li>
+        Puzzle 11
+      </styled.li>
+      <styled.li>
+        Puzzle 12
+      </styled.li>
+    </styled.ul>
+  </styled.section>
+</styled.main>
+`;

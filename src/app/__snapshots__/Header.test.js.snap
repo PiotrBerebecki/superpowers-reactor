@@ -10,21 +10,21 @@ exports[`Header renders correctly 1`] = `
             exact={true}
             to="/"
           >
-            latest
+            Popular
           </Styled(NavLink)>
         </styled.li>
         <styled.li>
           <Styled(NavLink)
-            to="/trending"
+            to="/latest"
           >
-            trending
+            Latest
           </Styled(NavLink)>
         </styled.li>
         <styled.li>
           <Styled(NavLink)
-            to="/top"
+            to="/favourite"
           >
-            top
+            Favourite
           </Styled(NavLink)>
         </styled.li>
       </styled.ul>

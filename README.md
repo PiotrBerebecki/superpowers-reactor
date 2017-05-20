@@ -22,6 +22,4 @@
 - Jest throwing errors when importing css files http://facebook.github.io/jest/docs/en/webpack.html#mocking-css-modules
 - Webpack config for production https://webpack.js.org/guides/production-build/
 - Testing components which include react-router components https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/testing.md#testing
-
-- CSS transform in package.json
-"\\.(css|less)$": "<rootDir>/config/jest/cssTransform.js"
+- Use [pre-push](https://www.npmjs.com/package/pre-push) module to run tests before every push to ensure that broken code is not published.

@@ -15,11 +15,13 @@ function Header() {
       <NavContainer>
         <Nav>
           <NavList>
-            <NavItem><NavMenuLink exact to="/">latest</NavMenuLink></NavItem>
+            <NavItem><NavMenuLink exact to="/">Popular</NavMenuLink></NavItem>
             <NavItem>
-              <NavMenuLink to="/trending">trending</NavMenuLink>
+              <NavMenuLink to="/latest">Latest</NavMenuLink>
             </NavItem>
-            <NavItem><NavMenuLink to="/top">top</NavMenuLink></NavItem>
+            <NavItem>
+              <NavMenuLink to="/favourite">Favourite</NavMenuLink>
+            </NavItem>
           </NavList>
         </Nav>
       </NavContainer>
