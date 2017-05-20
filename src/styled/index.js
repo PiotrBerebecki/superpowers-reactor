@@ -75,15 +75,25 @@ export const MainContainer = styled.section`
   `}
 `;
 
-export const PuzzleList = styled.ul`
+export const Card = css`
   ${media.desktop`
     box-shadow: 0 1px 1px ${props => props.theme.colorBoxShadowLight},
                 0px 2px 10px ${props => props.theme.colorBoxShadowLight};
   `}
 `;
 
+export const PuzzleList = styled.ul`
+  ${Card}
+`;
+
 export const PuzzleItem = styled.li`
   padding: ${props => props.theme.spaceM} ${props => props.theme.spaceS};
   border-bottom: solid 1px ${props => props.theme.colorPuzzleItemBorder};
+  background-color: ${props => props.theme.colorWhiteBackground};
+`;
+
+export const ErrorCard = styled.div`
+  ${Card}
+  padding: ${props => props.theme.spaceL} ${props => props.theme.spaceS};
   background-color: ${props => props.theme.colorWhiteBackground};
 `;
