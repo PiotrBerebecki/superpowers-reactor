@@ -39,6 +39,7 @@ export const NavMenuLink = styled(NavLink).attrs({
   text-transform: uppercase;
   text-decoration: none;
   transition: color .2s;
+  user-select: none;
   &:hover {
     color: ${props => props.theme.colorAccentOnPrimary};
   }

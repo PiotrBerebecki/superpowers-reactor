@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound renders 1`] = `
-<styled.div>
-  Sorry, this page has not been found.
-</styled.div>
+<Main>
+  <styled.div>
+    Sorry, this page has not been found.
+  </styled.div>
+</Main>
 `;

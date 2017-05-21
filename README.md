@@ -23,3 +23,8 @@
 - Webpack config for production https://webpack.js.org/guides/production-build/
 - Testing components which include react-router components https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/testing.md#testing
 - Use [pre-push](https://www.npmjs.com/package/pre-push) module to run tests before every push to ensure that broken code is not published.
+- If using redux-saga you get `regeneratorRuntime` error you may need `babel-polyfill`. https://github.com/redux-saga/redux-saga#using-umd-build-in-the-browser, https://babeljs.io/docs/usage/polyfill/
+- Listen to URL changes thanks to `withRouter` HOC from `react-router-dom` https://github.com/ReactTraining/react-router/issues/3554#issuecomment-299626161
+- Whn testing redux connected components export plain undecorated component: http://redux.js.org/docs/recipes/WritingTests.html#connected-components
+- Change testing environment to `jsdom` if getting error: `It looks like you called mount() without a global document being loaded`
+- Test error handing in `redux-sage` with `throw()` applied on iterator https://github.com/redux-saga/redux-saga/blob/master/docs/basics/ErrorHandling.md#error-handling

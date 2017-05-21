@@ -7,6 +7,7 @@ import {
   MainWrapper,
   MainContainer,
   ErrorCard,
+  PuzzleItem,
 } from './index';
 
 describe('HeaderWrapper', () => {
@@ -53,6 +54,14 @@ describe('ErrorCard', () => {
   it('renders its children', () => {
     const children = 'testText';
     const wrapper = shallow(<ErrorCard>{children}</ErrorCard>);
+    expect(wrapper.contains(children)).toBe(true);
+  });
+});
+
+describe('PuzzleItem', () => {
+  it('renders its children', () => {
+    const children = 'testText';
+    const wrapper = shallow(<PuzzleItem>{children}</PuzzleItem>);
     expect(wrapper.contains(children)).toBe(true);
   });
 });

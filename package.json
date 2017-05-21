@@ -18,13 +18,17 @@
     "build:prod": "webpack --env=prod --config webpack.config.prod.js"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "polished": "^1.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
-    "styled-components": "rc"
+    "redux-promise": "^0.5.3",
+    "redux-saga": "^0.15.3",
+    "styled-components": "rc",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

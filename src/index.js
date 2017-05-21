@@ -1,14 +1,18 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import { AppContainer } from 'react-hot-loader';
+import { Provider } from 'react-redux';
 
+import store from './store';
 import './styled/reset';
 import App from './app/App';
 
 ReactDOM.render(
-  <AppContainer>
-    <App />
-  </AppContainer>,
+  <Provider store={store}>
+    <AppContainer>
+      <App />
+    </AppContainer>
+  </Provider>,
   document.getElementById('root')
 );
 
@@ -18,9 +22,11 @@ if (module.hot) {
     console.clear();
     const NextApp = require('./app/App').default;
     ReactDOM.render(
-      <AppContainer>
-        <NextApp />
-      </AppContainer>,
+      <Provider store={store}>
+        <AppContainer>
+          <NextApp />
+        </AppContainer>
+      </Provider>,
       document.getElementById('root')
     );
   });

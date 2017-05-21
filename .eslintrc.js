@@ -8,9 +8,11 @@ module.exports = {
   plugins: ['react'],
   parser: 'babel-eslint',
   env: {
+    es6: true,
     browser: true,
     node: true,
     jest: true,
+    jasmine: true,
   },
   rules: {
     'no-console': 0,
