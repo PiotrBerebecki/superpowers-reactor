@@ -4,14 +4,13 @@
 # Superpowers Reactor
 
 ## Tech stack
-- react
-- redux
-- styled-components
-- jest
-- enzyme
-- jest-styled-components
+- **UI**: react
+- **State**: redux
+- **Styling**: styled-components
+- **Testing**: jest, enzyme, jest-styled-components
+- **Continuous integration**: Travis CI
 
-## Further information
+## Cool stuff I've learnt:
 
 - Migrating to Webpack 2: http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/
 - Getting starter with Webpack 2 https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783
@@ -27,4 +26,4 @@
 - Listen to URL changes thanks to `withRouter` HOC from `react-router-dom` https://github.com/ReactTraining/react-router/issues/3554#issuecomment-299626161
 - Whn testing redux connected components export plain undecorated component: http://redux.js.org/docs/recipes/WritingTests.html#connected-components
 - Change testing environment to `jsdom` if getting error: `It looks like you called mount() without a global document being loaded`
-- Test error handing in `redux-sage` with `throw()` applied on iterator https://github.com/redux-saga/redux-saga/blob/master/docs/basics/ErrorHandling.md#error-handling
+- Test error handling in `redux-sage` with `throw()` applied on iterator https://github.com/redux-saga/redux-saga/blob/master/docs/basics/ErrorHandling.md#error-handling

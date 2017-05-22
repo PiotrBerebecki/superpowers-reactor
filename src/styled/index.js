@@ -83,18 +83,65 @@ export const Card = css`
   `}
 `;
 
-export const PuzzleList = styled.ul`
-  ${Card}
-`;
-
-export const PuzzleItem = styled.li`
-  padding: ${props => props.theme.spaceM} ${props => props.theme.spaceS};
-  border-bottom: solid 1px ${props => props.theme.colorPuzzleItemBorder};
-  background-color: ${props => props.theme.colorWhiteBackground};
-`;
-
 export const ErrorCard = styled.div`
   ${Card}
   padding: ${props => props.theme.spaceL} ${props => props.theme.spaceS};
   background-color: ${props => props.theme.colorWhiteBackground};
+`;
+
+export const PuzzleList = styled.ul`
+  ${Card}
+`;
+
+export const PuzzleItemWrapper = styled.li`
+  padding: ${props => props.theme.spaceM} ${props => props.theme.spaceS};
+
+  border-bottom: solid 1px ${props => props.theme.colorPuzzleItemBorder};
+  background-color: ${props => props.theme.colorWhiteBackground};
+
+  ${media.desktop`
+    padding: 1.5rem 1.5rem;
+  `}
+
+`;
+
+export const PuzzleTitle = styled.h2`
+  margin-bottom: ${props => props.theme.spaceS};
+  color: ${props => props.theme.colorPrimary};
+  font-size: ${props => props.theme.fontSizeLarge};
+  text-transform: uppercase;
+`;
+
+export const PuzzleText = styled.p`
+  margin-bottom: ${props => props.theme.spaceM};
+`;
+
+export const AnswerButton = styled.button`
+  padding: 0.5rem 0.5rem;
+  border-radius: 3px;
+  background-color: ${props => props.theme.colorPrimary};
+  color: ${props => props.theme.colorAccentOnPrimary};
+  font-size: ${props => props.theme.fontSizeSmallXX};
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0em 0.1em 0.3em 0em rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: ${props => props.theme.colorPrimaryLight};
+    box-shadow: 0em 0.1em 0.4em 0em rgba(0,0,0,0.3);
+  }
+
+  &:active {
+    background: ${props => props.theme.colorPrimaryDark};
+    box-shadow: 0em 0.2em 0.6em 0.1em rgba(0,0,0,0.3);
+    transition: box-shadow 0.1s cubic-bezier(0.4,0,0.2,1);
+  }
+`;
+
+export const AnswerText = styled.p`
+  margin-top: ${props => props.theme.spaceM};
 `;

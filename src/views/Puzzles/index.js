@@ -5,13 +5,9 @@ import uuid from 'uuid/v4';
 
 import { getPuzzles } from './actions';
 import Main from './../../app/Main';
+import PuzzleItem from './PuzzleItem';
 
-import {
-  MainWrapper,
-  MainContainer,
-  PuzzleList,
-  PuzzleItem,
-} from './../../styled';
+import { MainWrapper, MainContainer, PuzzleList } from './../../styled';
 
 export class Puzzles extends Component {
   getCategory = props => {
@@ -35,7 +31,7 @@ export class Puzzles extends Component {
 
   render() {
     const renderPuzzles = this.props.puzzles.map(puzzle => (
-      <PuzzleItem key={uuid()}>{puzzle.title}</PuzzleItem>
+      <PuzzleItem key={uuid()} {...puzzle} />
     ));
 
     return (

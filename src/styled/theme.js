@@ -31,6 +31,8 @@ export const media = Object.keys(mediaSizes).reduce((acc, label) => {
 export default {
   // colors
   colorPrimary: pallette.blue,
+  colorPrimaryLight: lighten(0.02, pallette.blue),
+  colorPrimaryDark: darken(0.01, pallette.blue),
   colorAccentOnPrimary: pallette.white,
   colorAccentOnPrimaryMuted: lighten(0.44, pallette.grey),
   colorBoxShadow: lighten(0.2, pallette.grey),

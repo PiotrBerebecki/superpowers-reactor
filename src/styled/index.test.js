@@ -7,7 +7,8 @@ import {
   MainWrapper,
   MainContainer,
   ErrorCard,
-  PuzzleItem,
+  PuzzleItemWrapper,
+  AnswerText,
 } from './index';
 
 describe('HeaderWrapper', () => {
@@ -58,10 +59,18 @@ describe('ErrorCard', () => {
   });
 });
 
-describe('PuzzleItem', () => {
+describe('PuzzleItemWrapper', () => {
   it('renders its children', () => {
     const children = 'testText';
-    const wrapper = shallow(<PuzzleItem>{children}</PuzzleItem>);
+    const wrapper = shallow(<PuzzleItemWrapper>{children}</PuzzleItemWrapper>);
+    expect(wrapper.contains(children)).toBe(true);
+  });
+});
+
+describe('AnswerText', () => {
+  it('renders its children', () => {
+    const children = 'testText';
+    const wrapper = shallow(<AnswerText>{children}</AnswerText>);
     expect(wrapper.contains(children)).toBe(true);
   });
 });

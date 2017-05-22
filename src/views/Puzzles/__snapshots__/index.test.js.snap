@@ -3,9 +3,9 @@
 exports[`Puzzles renders without crashing 1`] = `
 <Main>
   <styled.ul>
-    <styled.li>
-      testTitle
-    </styled.li>
+    <PuzzleItem
+      title="testTitle"
+    />
   </styled.ul>
 </Main>
 `;

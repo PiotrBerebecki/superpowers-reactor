@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: 'Pouring water POPULAR & USER FAVOURITE',
+    title: 'Pouring water',
     text: 'If you had a 5-liter bowl and a 3-liter bowl, and an unlimited access to water, how would you measure exactly 4 liters?',
     answer: 'Fill the 5-litre bowl and pour water to the 3-litre bowl, which you empty afterwards. From the 5-litre bowl pour the 2 remaining litres to the 3-litre bowl. Refill the 5-litre bowl and fill in the 3-litre bowl (with 1 litre), so there stay the 4 required litres in the 5-litre bowl.',
     favCount: 199,
@@ -9,7 +9,7 @@ export default [
   },
   {
     id: 2,
-    title: 'Find an odd ball NEW',
+    title: 'Find an odd ball',
     text: `There are 9 similar balls. Eight of them weigh the same and the ninth is a bit heavier.
 How would you identify the heavier ball if you could use a two-pan balance scale only twice?`,
     answer: "Divide the 9 balls into 3 groups of 3. Weigh two groups. Thus you find out which group is the heavier ball in. Choose 2 balls from this group and compare their weights. And that's it.",
