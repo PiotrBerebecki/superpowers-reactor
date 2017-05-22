@@ -15,7 +15,10 @@
     "clean-dist": "rimraf dist && mkdir dist",
     "prebuild": "npm run clean-dist",
     "build:dev": "webpack --env=dev --config webpack.config.dev.js",
-    "build:prod": "webpack --env=prod --config webpack.config.prod.js"
+    "build:prod": "webpack --env=prod --config webpack.config.prod.js",
+    "renameForSurge": "mv dist/index.html build/200.html",
+    "surge": "surge ./dist --domain superpowers-reactor.surge.sh",
+    "deploy": "run-s build:prod renameForSurge surge"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
