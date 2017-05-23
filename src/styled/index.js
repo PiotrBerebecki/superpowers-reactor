@@ -41,7 +41,6 @@ export const NavList = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  ${/* border: solid 3px pink; */ ''}
 `;
 
 export const NavMenuLink = styled(NavLink).attrs({
@@ -114,14 +113,25 @@ export const PuzzleItemWrapper = styled.li`
   ${media.desktop`
     padding: 1.5rem 1.5rem;
   `}
+`;
 
+export const StyledHeart = styled.svg`
+  fill: ${props => (props.isFavourite ? props.theme.colorHeartActive : props.theme.colorHeartMuted)};
+  width: 1rem;
+  height: auto;
+  cursor: pointer;
+  user-select: none;
 `;
 
 export const PuzzleTitle = styled.h2`
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: ${props => props.theme.spaceS};
   margin-bottom: ${props => props.theme.spaceS};
   color: ${props => props.theme.colorPrimary};
   font-size: ${props => props.theme.fontSizeLarge};
   text-transform: uppercase;
+  user-select: none;
 `;
 
 export const PuzzleText = styled.p`

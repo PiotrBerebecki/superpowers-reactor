@@ -6,6 +6,7 @@
 ## Tech stack
 - **UI**: react
 - **State**: redux
+- **Persisting data**: localStorage
 - **Styling**: styled-components
 - **Testing**: jest, enzyme, jest-styled-components
 - **Continuous integration**: Travis CI
@@ -27,3 +28,4 @@
 - Whn testing redux connected components export plain undecorated component: http://redux.js.org/docs/recipes/WritingTests.html#connected-components
 - Change testing environment to `jsdom` if getting error: `It looks like you called mount() without a global document being loaded`
 - Test error handling in `redux-sage` with `throw()` applied on iterator https://github.com/redux-saga/redux-saga/blob/master/docs/basics/ErrorHandling.md#error-handling
+- Use `lodash/throttle` to minimise the number of times store.subscribe callball is executed (once a second) https://egghead.io/lessons/javascript-redux-persisting-the-state-to-the-local-storage

@@ -7,6 +7,7 @@ import {
   AnswerButton,
   AnswerText,
 } from './../../styled';
+import Heart from './Heart';
 
 class PuzzleItem extends Component {
   state = {
@@ -20,15 +21,16 @@ class PuzzleItem extends Component {
   };
 
   render() {
+    const { id, title, text, answer, isFavourite } = this.props;
     return (
       <PuzzleItemWrapper>
-        <PuzzleTitle>{this.props.title}</PuzzleTitle>
-        <PuzzleText>{this.props.text}</PuzzleText>
+        <Heart isFavourite={isFavourite} id={id} />
+        <PuzzleTitle>{title}</PuzzleTitle>
+        <PuzzleText>{text}</PuzzleText>
         <AnswerButton onClick={this.toggleAnswer}>
           {this.state.isAnswerVisible ? 'Hide Answer' : 'Show Answer'}
         </AnswerButton>
-        {this.state.isAnswerVisible &&
-          <AnswerText>{this.props.answer}</AnswerText>}
+        {this.state.isAnswerVisible && <AnswerText>{answer}</AnswerText>}
       </PuzzleItemWrapper>
     );
   }

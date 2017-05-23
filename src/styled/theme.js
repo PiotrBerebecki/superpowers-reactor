@@ -1,11 +1,12 @@
 import { css } from 'styled-components';
 import { lighten, darken } from 'polished';
 
-const pallette = {
+const palette = {
   blue: '#00aff0',
   white: '#ffffff',
   black: '#000000',
   grey: '#808080',
+  red: '#c62828',
 };
 
 const mediaSizes = {
@@ -30,17 +31,19 @@ export const media = Object.keys(mediaSizes).reduce((acc, label) => {
 
 export default {
   // colors
-  colorPrimary: pallette.blue,
-  colorPrimaryLight: lighten(0.02, pallette.blue),
-  colorPrimaryDark: darken(0.01, pallette.blue),
-  colorAccentOnPrimary: pallette.white,
-  colorAccentOnPrimaryMuted: lighten(0.44, pallette.grey),
-  colorBoxShadow: lighten(0.2, pallette.grey),
-  colorBoxShadowLight: lighten(0.42, pallette.grey),
-  colorWhiteBackground: pallette.white,
-  colorGreyBackground: lighten(0.45, pallette.grey),
-  colorFontMain: lighten(0.4, pallette.black),
-  colorPuzzleItemBorder: lighten(0.42, pallette.grey),
+  colorPrimary: palette.blue,
+  colorPrimaryLight: lighten(0.02, palette.blue),
+  colorPrimaryDark: darken(0.01, palette.blue),
+  colorAccentOnPrimary: palette.white,
+  colorAccentOnPrimaryMuted: lighten(0.44, palette.grey),
+  colorBoxShadow: lighten(0.2, palette.grey),
+  colorBoxShadowLight: lighten(0.42, palette.grey),
+  colorWhiteBackground: palette.white,
+  colorGreyBackground: lighten(0.45, palette.grey),
+  colorFontMain: lighten(0.4, palette.black),
+  colorPuzzleItemBorder: lighten(0.42, palette.grey),
+  colorHeartMuted: lighten(0.2, palette.grey),
+  colorHeartActive: palette.red,
 
   // font sizes
   fontSizLargeXX: '1.5rem',

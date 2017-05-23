@@ -5,7 +5,7 @@ export default [
     text: 'If you had a 5-liter bowl and a 3-liter bowl, and an unlimited access to water, how would you measure exactly 4 liters?',
     answer: 'Fill the 5-litre bowl and pour water to the 3-litre bowl, which you empty afterwards. From the 5-litre bowl pour the 2 remaining litres to the 3-litre bowl. Refill the 5-litre bowl and fill in the 3-litre bowl (with 1 litre), so there stay the 4 required litres in the 5-litre bowl.',
     favCount: 950,
-    isUserFavourite: true,
+    isFavourite: true,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export default [
     text: `There are 9 similar balls. Eight of them weigh the same and the ninth is a bit heavier. How would you identify the heavier ball if you could use a two-pan balance scale only twice?`,
     answer: "Divide the 9 balls into 3 groups of 3. Weigh two groups. Thus you find out which group is the heavier ball in. Choose 2 balls from this group and compare their weights. And that's it.",
     favCount: 600,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export default [
     text: 'Your job is to measure 45 minutes, if you have only two cords and matches to light the cords. The two cords are twisted from various materials and so their different segments can burn at different rates.Each cord burns from end to end in exactly one hour.',
     answer: 'Start fire on both ends of one igniter cord and on one end of the second igniter cord. The very moment the first cord (where both ends burn) stops burning (that is after 30 minutes), start fire on the other end of the second cord (otherwise it would burn another 30 minutes). Thus the second igniter cord burns just 15 minutes from then. And that is all together 45 minutes.',
     favCount: 900,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export default [
     text: 'There are three switches downstairs. Each corresponds to one of the three light bulbs in the attic. You can turn the switches on and off and leave them in any position. How would you identify which switch corresponds to which light bulb, if you are only allowed one trip upstairs?',
     answer: 'Keep the first bulb switched on for a few minutes. It gets warm, right? So all you have to do then is ... switch it off, switch another one on, walk into the room with bulbs, touch them and tell which one was switched on as the first one (the warm one) and the others can be easily identified.',
     favCount: 970,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export default [
     text: "How can you throw a ball as hard as you can and have it come back to you, even if it doesn't bounce off anything? There is nothing attached to it, and no one else catches or throws it back to you.",
     answer: 'Throw the ball straight up in the air.',
     favCount: 500,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export default [
     text: 'An Arab sheikh tells his two sons to race their camels to a distant city to see who will inherit his fortune. The one whose camel is slower wins. After wandering aimlessly for days, the brothers ask a wise man for guidance. Upon receiving the advice, they jump on the camels and race to the city as fast as they can. What did the wise man say to them?',
     answer: 'The wise man told them to switch camels.',
     favCount: 930,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export default [
     text: "You reach a fork in the road and find a pair of identical twin brothers standing there. One standing on the road to village and the other standing on the road to neverland. Both sisters know where the roads go but one of them always tells the truth and the other always lies (you don't know who is lying). If you are allowed to ask only one question to one of the sisters to find the correct road to the village, what is your question?",
     answer: 'Which road would you brother say leads to the village?',
     favCount: 910,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 9,
@@ -61,7 +61,7 @@ export default [
     text: "A farmer returns from the market, where he bought a goat, a cabbage and a wolf. On the way home he must cross a river. His boat is small and won't fit more than one of his purchases. He cannot leave the goat alone with the cabbage (because the goat would eat it), nor he can leave the goat alone with the wolf (because the goat would be eaten). How can the farmer get everything on the other side in this river crossing puzzle?",
     answer: 'Take the goat to the other side. Go back, take cabbage, unload it on the other side where you load the goat, go back and unload it. Take the wolf to the other side where you unload it. Go back for the goat.',
     favCount: 960,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 10,
@@ -69,7 +69,7 @@ export default [
     text: 'A woman had two sons who were born on the same hour of the same day of the same year. But they were not twins. How could this be so?',
     answer: 'They were two of a set of triplets (or quadruplets etc.)',
     favCount: 500,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 11,
@@ -77,7 +77,7 @@ export default [
     text: 'Five pieces of coal, a carrot and a scarf are lying on the lawn. Nobody put them on the lawn but there is a perfectly logical reason why they should be there. What is it?',
     answer: 'They were used by children who made a snowman. The snow has now melted.',
     favCount: 995,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 12,
@@ -85,7 +85,7 @@ export default [
     text: 'A bat and ball cost £1.10. The bat costs £1.00 more than the ball. How much does the ball cost?',
     answer: '5p',
     favCount: 960,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 13,
@@ -93,7 +93,7 @@ export default [
     text: 'The day before yesterday, Kim was 17. Next year, she will be 20. How can this be?',
     answer: "Kim's birthday is 31 December, and the statement is made on January 1. She was 17 the day before yesterday (on 30 December), 18 yesterday, will be 19 this year (31 December) and therefore 20 next year.",
     favCount: 940,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 14,
@@ -101,7 +101,7 @@ export default [
     text: 'You have two small, plain, unmarked hourglasses. One measures four minutes, the other measures seven. Using only these, how can you measure a time of nine minutes?',
     answer: 'Turn over both hourglasses simultaneously. When the four-minute hourglass finishes, immediately turn it over. When the seven-minute hourglass finishes, immediately turn it over. The second time the four-minute hourglass finishes, the seven-minute hourglass will have been running for one minute, so immediately turning it over will record the final minute. Nine minutes in total will have elapsed.',
     favCount: 200,
-    isUserFavourite: false,
+    isFavourite: false,
   },
   {
     id: 15,
@@ -109,6 +109,6 @@ export default [
     text: 'A family consists of two mothers, two daughters, one grandmother and one granddaughter. How many people are in the family?',
     answer: 'There are three people – a grandmother, her daughter and her granddaughter. The grandmother is a mother to her daughter and her daughter is the mother to the granddaughter.',
     favCount: 840,
-    isUserFavourite: false,
+    isFavourite: false,
   },
 ];

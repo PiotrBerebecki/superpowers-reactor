@@ -23,6 +23,7 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "file-loader": "^0.11.1",
+    "lodash": "^4.17.4",
     "polished": "^1.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
