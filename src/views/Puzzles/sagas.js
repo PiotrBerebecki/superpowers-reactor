@@ -6,7 +6,6 @@ import {
   GET_PUZZLES_FAILED,
   POPULAR,
   LATEST,
-  FAVOURITE,
 } from './constants';
 import preloadedPuzzles from './../../database/puzzles';
 
@@ -32,8 +31,6 @@ export function sortPuzzles(puzzles, category) {
       return [...puzzles].sort((a, b) => b.favCount - a.favCount);
     case LATEST:
       return [...puzzles].sort((a, b) => b.id - a.id);
-    case FAVOURITE:
-      return puzzles.filter(puzzle => puzzle.isFavourite);
     default:
       return puzzles;
   }

@@ -106,10 +106,6 @@ describe('sortPuzzles', () => {
     ]);
   });
 
-  it('returns only the puzzles that have been favourited', () => {
-    expect(sortPuzzles(puzzlesToSort, FAVOURITE)).toEqual([puzzlesToSort[0]]);
-  });
-
   it('returns original puzzles if invalid category', () => {
     expect(sortPuzzles(puzzlesToSort, 'someCategory')).toEqual(puzzlesToSort);
   });
