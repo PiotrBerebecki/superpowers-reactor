@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import uuid from 'uuid/v4';
 
-import { getPuzzles } from './actions';
+import { getPuzzles } from './sagas';
 import Main from './../../app/Main';
 import PuzzleItem from './PuzzleItem';
 

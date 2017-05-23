@@ -24,7 +24,9 @@ class PuzzleItem extends Component {
       <PuzzleItemWrapper>
         <PuzzleTitle>{this.props.title}</PuzzleTitle>
         <PuzzleText>{this.props.text}</PuzzleText>
-        <AnswerButton onClick={this.toggleAnswer}>Show Answer</AnswerButton>
+        <AnswerButton onClick={this.toggleAnswer}>
+          {this.state.isAnswerVisible ? 'Hide Answer' : 'Show Answer'}
+        </AnswerButton>
         {this.state.isAnswerVisible &&
           <AnswerText>{this.props.answer}</AnswerText>}
       </PuzzleItemWrapper>

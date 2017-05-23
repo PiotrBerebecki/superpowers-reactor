@@ -28,6 +28,10 @@ module.exports = {
           { loader: 'css-loader', options: { modules: true } },
         ],
       },
+      {
+        test: /\.svg$/,
+        use: 'file-loader',
+      },
     ],
   },
 

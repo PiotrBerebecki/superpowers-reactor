@@ -5,7 +5,7 @@ import puzzlesSaga, {
   fetchPuzzles,
   handlePuzzlesSaga,
   sortPuzzles,
-} from './actions';
+} from './sagas';
 import {
   GET_PUZZLES,
   GET_PUZZLES_SUCCEEDED,

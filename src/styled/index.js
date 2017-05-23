@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { media } from './theme';
 
 export const HeaderWrapper = styled.header`
-  padding-top: ${props => props.theme.spaceM};
+  ${/* padding-top: ${props => props.theme.spaceM}; */ ''}
   padding-left: ${props => props.theme.spaceS};
   padding-right: ${props => props.theme.spaceS};
   background-color: ${props => props.theme.colorPrimary};
@@ -20,12 +20,24 @@ export const NavContainer = styled.div`
 `;
 
 export const Nav = styled.nav`
-  ${/* border: solid 3px green; */ ''}
+  display: flex;
+  align-items: center;
+`;
+
+export const Logo = styled.img`
+  margin-right: 1rem;
+  width: 1.8em;
+  height: 1.8rem;
+  ${media.desktop`
+    margin-right: 3rem;
+  `}
 `;
 
 export const NavList = styled.ul`
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 `;
 
 export const NavItem = styled.li`
@@ -63,6 +75,7 @@ export const NavMenuLink = styled(NavLink).attrs({
 export const MainWrapper = styled.main`
   color: ${props => props.theme.colorFontMain};
   font-size: ${props => props.theme.fontSizeSmall};
+  font-weight: 300;
 `;
 
 export const MainContainer = styled.section`
@@ -94,8 +107,7 @@ export const PuzzleList = styled.ul`
 `;
 
 export const PuzzleItemWrapper = styled.li`
-  padding: ${props => props.theme.spaceM} ${props => props.theme.spaceS};
-
+  padding: ${props => props.theme.spaceM} ${props => props.theme.spaceM};
   border-bottom: solid 1px ${props => props.theme.colorPuzzleItemBorder};
   background-color: ${props => props.theme.colorWhiteBackground};
 
@@ -117,6 +129,7 @@ export const PuzzleText = styled.p`
 `;
 
 export const AnswerButton = styled.button`
+  width: 9rem;
   padding: 0.5rem 0.5rem;
   border-radius: 3px;
   background-color: ${props => props.theme.colorPrimary};
@@ -144,4 +157,7 @@ export const AnswerButton = styled.button`
 
 export const AnswerText = styled.p`
   margin-top: ${props => props.theme.spaceM};
+  padding: 1.5rem;
+  background-color: ${props => props.theme.colorGreyBackground};
+  border-radius: 3px;
 `;

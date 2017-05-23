@@ -4,6 +4,13 @@ exports[`Header renders correctly 1`] = `
 <styled.header>
   <styled.div>
     <styled.nav>
+      <styled.img
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+      />
       <styled.ul>
         <styled.li>
           <Styled(NavLink)

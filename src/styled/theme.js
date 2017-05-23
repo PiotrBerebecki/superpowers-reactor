@@ -38,6 +38,7 @@ export default {
   colorBoxShadow: lighten(0.2, pallette.grey),
   colorBoxShadowLight: lighten(0.42, pallette.grey),
   colorWhiteBackground: pallette.white,
+  colorGreyBackground: lighten(0.45, pallette.grey),
   colorFontMain: lighten(0.4, pallette.black),
   colorPuzzleItemBorder: lighten(0.42, pallette.grey),
 

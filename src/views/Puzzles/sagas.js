@@ -8,7 +8,7 @@ import {
   LATEST,
   FAVOURITE,
 } from './constants';
-import preloadedPuzzles from './../../puzzleData/puzzles';
+import preloadedPuzzles from './../../database/puzzles';
 
 export function getPuzzles(category) {
   return {
