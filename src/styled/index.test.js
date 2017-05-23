@@ -9,6 +9,7 @@ import {
   ErrorCard,
   PuzzleItemWrapper,
   AnswerText,
+  AnswerButton,
 } from './index';
 
 describe('HeaderWrapper', () => {

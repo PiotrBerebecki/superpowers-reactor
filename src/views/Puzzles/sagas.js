@@ -9,7 +9,6 @@ import {
   FAVOURITE,
 } from './constants';
 import preloadedPuzzles from './../../database/puzzles';
-import { loadState } from './../../localStorage';
 
 export function getPuzzles(category) {
   return {

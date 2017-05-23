@@ -29,7 +29,7 @@ export default [
     text: 'There are three switches downstairs. Each corresponds to one of the three light bulbs in the attic. You can turn the switches on and off and leave them in any position. How would you identify which switch corresponds to which light bulb, if you are only allowed one trip upstairs?',
     answer: 'Keep the first bulb switched on for a few minutes. It gets warm, right? So all you have to do then is ... switch it off, switch another one on, walk into the room with bulbs, touch them and tell which one was switched on as the first one (the warm one) and the others can be easily identified.',
     favCount: 970,
-    isFavourite: false,
+    isFavourite: true,
   },
   {
     id: 5,

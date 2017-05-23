@@ -6,12 +6,11 @@
 ## Tech stack
 - **UI**: react
 - **State**: redux
-- **Persisting data**: localStorage
 - **Styling**: styled-components
 - **Testing**: jest, enzyme, jest-styled-components
 - **Continuous integration**: Travis CI
 
-## Cool stuff I've learnt:
+## Cool stuff I've read about:
 
 - Migrating to Webpack 2: http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/
 - Getting starter with Webpack 2 https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783
