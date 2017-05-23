@@ -115,18 +115,9 @@ export const PuzzleItemWrapper = styled.li`
   `}
 `;
 
-export const StyledHeart = styled.svg`
-  fill: ${props => (props.isFavourite ? props.theme.colorHeartActive : props.theme.colorHeartMuted)};
-  width: 1rem;
-  height: auto;
-  cursor: pointer;
-  user-select: none;
-`;
-
 export const PuzzleTitle = styled.h2`
   display: inline-block;
   vertical-align: middle;
-  margin-left: ${props => props.theme.spaceS};
   margin-bottom: ${props => props.theme.spaceS};
   color: ${props => props.theme.colorPrimary};
   font-size: ${props => props.theme.fontSizeLarge};

@@ -7,9 +7,6 @@ import {
   POPULAR,
   LATEST,
   FAVOURITE,
-  TOGGLE_FAVOURITE,
-  TOGGLE_FAVOURITE_SUCCEEDED,
-  TOGGLE_FAVOURITE_FAILED,
 } from './constants';
 import preloadedPuzzles from './../../database/puzzles';
 import { loadState } from './../../localStorage';
@@ -18,13 +15,6 @@ export function getPuzzles(category) {
   return {
     type: GET_PUZZLES,
     category,
-  };
-}
-
-export function toggleFavourite(id) {
-  return {
-    type: TOGGLE_FAVOURITE,
-    id,
   };
 }
 
@@ -68,21 +58,6 @@ export function* handlePuzzlesSaga(action) {
   }
 }
 
-export function* handleToggleFavourite(action) {
-  try {
-    yield put({ type: TOGGLE_FAVOURITE_SUCCEEDED, payload: action.id });
-  } catch (e) {
-    yield put({
-      type: TOGGLE_FAVOURITE_FAILED,
-      payload: 'Sorry, we were unable to save to your current selection',
-    });
-  }
-  yield;
-}
-
 export default function* puzzlesSaga() {
-  yield [
-    takeLatest(GET_PUZZLES, handlePuzzlesSaga),
-    takeLatest(TOGGLE_FAVOURITE, handleToggleFavourite),
-  ];
+  yield takeLatest(GET_PUZZLES, handlePuzzlesSaga);
 }

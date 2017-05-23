@@ -7,7 +7,6 @@ import {
   AnswerButton,
   AnswerText,
 } from './../../styled';
-import Heart from './Heart';
 
 class PuzzleItem extends Component {
   state = {
@@ -24,7 +23,6 @@ class PuzzleItem extends Component {
     const { id, title, text, answer, isFavourite } = this.props;
     return (
       <PuzzleItemWrapper>
-        <Heart isFavourite={isFavourite} id={id} />
         <PuzzleTitle>{title}</PuzzleTitle>
         <PuzzleText>{text}</PuzzleText>
         <AnswerButton onClick={this.toggleAnswer}>

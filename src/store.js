@@ -10,10 +10,8 @@ import { loadState, saveState } from './localStorage';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const sagaMiddleware = createSagaMiddleware();
 
-const store = composeEnhancers(
+export default composeEnhancers(
   applyMiddleware(promiseMiddleware, sagaMiddleware)
 )(createStore)(rootReducer);
-
-export default store;
 
 sagaMiddleware.run(puzzlesSaga);
