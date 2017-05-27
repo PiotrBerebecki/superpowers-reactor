@@ -26,7 +26,7 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img`
   margin-right: 1rem;
-  width: 1.8em;
+  width: 1.8rem;
   height: 1.8rem;
   ${media.desktop`
     margin-right: 3rem;
@@ -34,6 +34,7 @@ export const Logo = styled.img`
 `;
 
 export const NavList = styled.ul`
+  flex: 1;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
